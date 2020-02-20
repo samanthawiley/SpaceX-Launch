@@ -11,7 +11,6 @@ const store = createStore();
 const isEmail = require('isemail');
 
 const server = new ApolloServer({
-
   context: async ({ req }) => {
     // simple auth check on every request
     const auth = req.headers && req.headers.authorization || '';
